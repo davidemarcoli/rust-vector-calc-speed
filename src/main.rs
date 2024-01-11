@@ -26,13 +26,9 @@ fn main() {
 fn run_calculations(mode: &str, iterations: usize) {
     let mut total_time = 0;
 
-    for i in 0..iterations {
+    for _ in 0..iterations {
         let v1 = Vector3::new(rand::random::<f64>(), rand::random::<f64>(), rand::random::<f64>());
         let v2 = Vector3::new(rand::random::<f64>(), rand::random::<f64>(), rand::random::<f64>());
-
-        if i % 100_000 == 0 {
-            println!("{}%", i / 1_000_000);
-        }
 
         let start = Instant::now();
         match mode {
