@@ -1,0 +1,13 @@
+0%
+10%
+20%
+30%
+40%
+50%
+60%
+70%
+80%
+90%
+Total time for no-trig mode: 17862164966 nanoseconds
+Average time for no-trig mode: 17 nanoseconds
+
