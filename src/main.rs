@@ -44,6 +44,7 @@ fn run_calculations(mode: &str, iterations: usize) {
     }
 
     println!("Total time for {} mode: {} nanoseconds", mode, total_time);
+    println!("Average time for {} mode: {} nanoseconds", mode, total_time / iterations as i128);
 }
 
 fn calculate_with_trig(v1: Vector3<f64>, v2: Vector3<f64>) -> f64 {
@@ -56,8 +57,3 @@ fn calculate_without_trig(v1: Vector3<f64>, v2: Vector3<f64>) -> f64 {
     let area = 0.5 * (v1.norm().powi(2) * v2.norm().powi(2) - v1.dot(&v2).powi(2)).sqrt();
     return area;
 }
-
-// fn calculate_with_cross(v1: Vector3<f64>, v2: Vector3<f64>, v3: Vector3<f64>) -> f64 {
-//     let area = 0.5 * v1.cross(&v2).norm();
-//     return area;
-// }
